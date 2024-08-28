@@ -1,0 +1,37 @@
+.cursor {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  /* Increased transition duration and delay for a slower follow effect */
+  transition: transform 1.5s ease-out 0.6s, opacity 0.15s ease-in-out;
+}
+
+.cursor svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-180deg);
+  transition: transform 1.5s cubic-bezier(0.23, 1, 0.32, 1) 0.6s; /* Increased delay */
+}
+
+.cursor svg path {
+  fill: #000;
+  stroke: #000; /* Cursor border color */
+  stroke-width: 2; /* Border thickness */
+  transition: stroke 0.8s ease-in-out 0.6s; /* Increased delay */
+}
+
+.cursor.hovered svg path {
+  stroke: #ff007f; /* Change the color on hover */
+}
+
+/* Adjust cursor size and stroke on hover */
+.cursor.hovered {
+  transform: scale(1.2); /* Slightly increase the size on hover */
+}
+
+.cursor.hovered svg path {
+  stroke-width: 4; /* Increase stroke width on hover */
+}

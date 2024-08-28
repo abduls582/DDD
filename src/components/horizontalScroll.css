@@ -1,0 +1,20 @@
+/* src/components/horizontalScroll.css */
+.scroll-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow */
+}
+
+.panel {
+  min-width: 100vw; /* Each panel takes the full width of the viewport */
+  height: 100vh; /* Each panel takes the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff; /* Background color for visibility */
+}
+
+.panel img {
+  width: 100%; /* Responsive images */
+  height: auto; /* Maintain aspect ratio */
+}
