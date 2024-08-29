@@ -14,7 +14,7 @@ function App() {
       <SocialMedia />
       <FeedbackForm />
       <ThankYouPage />
-      <Test />
+      {/* <Test /> */}
     </>
   );
 }

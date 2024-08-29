@@ -1,21 +1,35 @@
-import React from "react";
-import "./style.css"; // Your main app styles
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./style.css"; // Importing the CSS file with necessary styles
 import logo from "../assets/img/logo.png";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animation
+      once: true, // Whether the animation should happen only once
+    });
+  }, []);
+
   return (
     <div className="container-fluid p-0 first_page">
-      <header className="text-center py-5 bg-dark text-white header">
-        {" "}
-        {/* Added 'header' class here */}
-        <h1 className="custom-header">HELLO EVERYONE!!!!!!</h1>
-        <h2 className="custom-header">WELCOME TO</h2>
-        <div className="d-flex justify-content-center align-items-center">
-          <span className="me-3 text-digital">DIGITAL</span>
-          <img src={logo} alt="Digital Dammish Logo" className="custom-logo" />
-          <span className="ms-3 text-dammish">DAMMISH</span>
-        </div>
-      </header>
+      {/* Sticky Logo */}
+      <div className="sticky-logo">
+        <img src={logo} alt="Digital Dammish Logo" className="custom-logo" />
+      </div>
+
+      {/* Animated Blocks Section */}
+      <h1 className="text-center mt-5">Animate On Scroll</h1>
+      <div className="view">
+        {Array.from({ length: 20 }).map((_, index) => (
+          <div
+            key={index}
+            className={`block block-${index + 1}`}
+            data-aos="fade-up"
+          ></div>
+        ))}
+      </div>
     </div>
   );
 };
