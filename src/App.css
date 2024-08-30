@@ -1,0 +1,50 @@
+/* App.css */
+
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  /* Container for scroll animation component */
+  .scroll-animation-container {
+    padding: 20px;
+    background-color: #e9ecef; /* Slightly different background */
+  }
+  
+  /* Second Part Styling */
+  .second-part {
+    padding: 40px;
+    background-color: #ffffff; /* White background for the section */
+  }
+  
+  /* Social Media Section Styling */
+  .social-media {
+    padding: 20px;
+    background-color: #343a40; /* Dark background for social media section */
+    color: #ffffff;
+  }
+  
+  /* Feedback Form Styling */
+  .feedback-form {
+    padding: 30px;
+    background-color: #ffffff; /* White background for the form */
+    border-top: 1px solid #dee2e6; /* Subtle border */
+  }
+  
+  /* Thank You Page Styling */
+  .thank-you-page {
+    padding: 20px;
+    background-color: #212529; /* Dark background color for thank you page */
+    color: #ffffff;
+  }
+  
+  /* Ensure responsiveness */
+  @media (max-width: 768px) {
+    .feedback-form, .social-media, .second-part, .scroll-animation-container, .thank-you-page {
+      padding: 15px;
+    }
+  }
+  
