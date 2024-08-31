@@ -38,6 +38,10 @@
   }
   
   @media (max-width: 768px) {
+    .thank-you-container {
+      height: 70vh;
+      padding: 60px;
+    }
     .thank-you-heading {
       font-size: 36px;
     }
