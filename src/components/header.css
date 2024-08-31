@@ -1,0 +1,35 @@
+.welcome-header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #0e1c29;
+  }
+  
+  .header {
+    height: 100vh;
+  }
+  
+  .custom-header {
+    letter-spacing: 0.1em;
+    margin: 15px;
+  }
+  
+  .custom-logo {
+    max-width: 150px;
+  }
+  
+  .text-digital {
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  
+  .text-dammish {
+    margin-bottom: 60px;
+    font-size: 25px;
+  }
+  
+  body, html {
+    padding: 0;
+    margin: 0;
+  }
+  

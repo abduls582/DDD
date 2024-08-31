@@ -10,6 +10,8 @@ import ThankYouPage from "./components/ThankYouPage";
 function App() {
   return (
     <>
+      {/* <Header /> */}
+
       <div>
         <ScrollAnimationComponent />
       </div>

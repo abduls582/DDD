@@ -7,12 +7,33 @@ body {
 }
 
 .stickyLogo {
-  position:fixed; /* Use fixed to keep it visible */
+  position: fixed;
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%);
   z-index: 10; /* Start on top */
   transition: z-index 0.3s ease; /* Smooth transition */
+  display: flex;
+  align-items: center;
+}
+
+.text_digital {
+  font-weight: 500;
+  margin-top: 60px;
+  font-size: 25px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+}
+
+.text_dammish {
+  font-weight: 500;
+  margin-bottom: 60px;
+  font-size: 25px;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+  /* margin-left: 10px; */
 }
 
 .customLogo {
@@ -28,6 +49,7 @@ body {
   position: relative; /* Relative to the parent container */
   z-index: 5; /* Lower z-index so other components come on top */
   margin-top: 100px; /* Added some margin for better positioning */
+  margin-top: 100px;
 }
 
     
