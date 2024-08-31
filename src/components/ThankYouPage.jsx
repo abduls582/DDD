@@ -1,5 +1,5 @@
 import React from "react";
-import "./thankyou.css";
+import "../styles/thankyou.css";  // Adjust the path according to the file location
 
 const ThankYouPage = () => {
   return (
