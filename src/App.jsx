@@ -16,7 +16,9 @@ function App() {
       <SecondPart />
       <SocialMedia />
       <FeedbackForm />
-      <ThankYouPage />
+      <div className="thank-you-wrapper">
+        <ThankYouPage />
+      </div>
     </>
   );
 }
