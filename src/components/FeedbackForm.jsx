@@ -4,7 +4,7 @@ import "./style.css";
 
 const FeedbackForm = () => {
   const [data, setData] = useState({
-    email: "",
+    email: "", 
     query: "",
   });
 
