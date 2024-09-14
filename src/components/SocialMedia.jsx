@@ -10,21 +10,21 @@ const SocialMedia = () => {
       <div className="container">
         <h2 className="text-white mb-5">Let's Chat</h2>
         <div className="row justify-content-center">
-          <div className="col-md-3">
+          <div className="col-md-4 col-lg-3">
             <img 
               src={instagram}
               alt="Instagram" 
               className="img-fluid mb-4" 
             />
           </div>
-          <div className="col-md-3">
+          {/* <div className="col-md-3">
             <img 
               src={facebook}
               alt="Facebook" 
               className="img-fluid mb-4" 
             />
-          </div>
-          <div className="col-md-3">
+          </div> */}
+          <div className="col-md-4 col-lg-3">
             <img 
               src={gmail}
               alt="Email" 

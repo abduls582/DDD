@@ -16,6 +16,11 @@ html {
 .custom-logo {
   max-width: 150px;
 }
+.social-icon {
+  max-width: 40% !important; /* Ensures the icon is responsive */
+  height: auto !important; /* Keeps the aspect ratio */
+  /* margin-top: 10px; */
+}
 
 h1 {
   width: 100%;
@@ -130,6 +135,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .social-icon {
+    width: 100px; /* Adjust the width as needed */
+    margin: 20px 20px;
+
+  }
   .service-card {
     height: auto;
     padding: 10px;
@@ -263,6 +273,10 @@ h1 {
 
 /* Responsive adjustments */
 @media (max-width: 576px) {
+  .social-icon {
+    width: 80px; /* Adjust the width as needed */
+    margin: 20px 20px;
+  }
   .feedback-form {
     padding: 20px;
   }
